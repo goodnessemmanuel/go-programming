@@ -1,6 +1,9 @@
 package datatypes
 
-import "fmt"
+import (
+	"fmt"
+	"runtime"
+)
 
 //Long declaration
 var y = 42 //package scope decalared variable. similar to var z and n below
@@ -48,4 +51,8 @@ func Exercise()  {
     k := int(x)
     fmt.Println(k)
     fmt.Printf("%T\n" , k)
+    
+    fmt.Println("System spec inbuilt go command")
+    fmt.Println(runtime.GOOS)
+    fmt.Println(runtime.GOARCH)
 }
