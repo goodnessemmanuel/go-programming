@@ -7,8 +7,6 @@ import (
 )
 
 func main() {
-	datatype := datatypes.Datatypes()
 	fmt.Println("Welcome to go!")
-	fmt.Println(datatypes.Datatypes())//direct call
-	fmt.Println(datatype) //Call via a short variable declaration 
+	datatypes.Datatypes()//direct call
 }

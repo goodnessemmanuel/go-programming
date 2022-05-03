@@ -11,7 +11,7 @@ var n string = `"I am also a variable of type string"`
 
 var status bool = true
 
-
+var zeroValueString string
 //End long variable declaration
 
 func Datatypes() {
@@ -23,4 +23,29 @@ func Datatypes() {
 	fmt.Printf("%T\n", n)
     fmt.Println(status)
 	fmt.Printf("%T\n", status)
+}
+//working with own type
+type hotdog int
+var derivativeOfHotDog hotdog
+var num int
+func OwnType()  {
+    fmt.Println(derivativeOfHotDog)
+    fmt.Printf("%T\n", derivativeOfHotDog)
+    //you cannot do > num = derivativeOfHotDog because both are of different datatype
+    num = int(derivativeOfHotDog)
+    fmt.Println(num)
+
+}
+
+type myowntype int
+var x myowntype
+func Exercise()  {
+    fmt.Println(x) //you get the zero value here since x is not assigned
+    fmt.Printf("%T\n", x) // print type of x
+    x = 42
+    fmt.Println(x)
+    fmt.Printf("%T\n", x)
+    k := int(x)
+    fmt.Println(k)
+    fmt.Printf("%T\n" , k)
 }
