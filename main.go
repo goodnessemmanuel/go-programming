@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	datatypes "github.com/goodnessemmanuel/go-programming/data-types"
+	datatypes "github.com/goodnessemmanuel/go-programming/datatypes"
 )
 
 func main() {
